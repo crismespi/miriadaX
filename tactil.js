@@ -4,7 +4,7 @@ $( function (){
 	function evoluciona(){
 		var url = imagen.attr("src");
 		if(url == "charmander.png"){
-			imagen.attr('src', 'charmeleon.png');
+			imagen.attr('src', 'charmeleon.PNG');
 		}
 		else{
 			imagen.attr('src', 'charizard.png');
@@ -18,7 +18,7 @@ $( function (){
 			imagen.attr('src', 'charmander.png');
 		}
 		else{
-			imagen.attr('src', 'charmeleon.png');
+			imagen.attr('src', 'charmeleon.PNG');
 		}
 		
 	}

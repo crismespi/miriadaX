@@ -1,26 +1,29 @@
 $( function (){
-	var i=$("#imagen");
-
+	var imagen=$("#imagen");
+	
 	function evoluciona(){
-		if(i.attr == "charmander.png"){
-			i.attr('src', 'charmeleon.png');
+		var url = imagen.attr("src");
+		if(url == "charmander.png"){
+			imagen.attr('src', 'charmeleon.png');
 		}
 		else{
-			i.attr('src', 'charizard.jpeg');
+			imagen.attr('src', 'charizard.png');
 		}
 		
 	}
 
 	function involuciona(){
-		if(i.attr == "charmeleon.png"){
-			i.attr('src', 'charmander.png');
+		var url = imagen.attr("src");
+		if(url == "charmeleon.png"){
+			imagen.attr('src', 'charmander.png');
 		}
 		else{
-			i.attr('src', 'charmeleon.png');
+			imagen.attr('src', 'charmeleon.png');
 		}
 		
 	}
 
-	i.on('swipeRight', evoluciona);
-	i.on('swipeLeft', involuciona);
+	imagen.on('swipeRight', evoluciona);
+	imagen.on('swipeLeft', involuciona);
+	imagen.on('click', evoluciona);
 });

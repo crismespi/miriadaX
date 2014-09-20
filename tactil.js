@@ -1,5 +1,5 @@
 $( function (){
-	var i=$(#imagen);
+	var i=$("#imagen");
 
 	function evoluciona(){
 		if(i.attr == "charmander.png"){
@@ -12,8 +12,5 @@ $( function (){
 	}
 
 	i.on('swipeRight', evoluciona);
-	i.on('swipeLeft', involuciona)
-
-
-
+	i.on('swipeLeft', involuciona);
 });
